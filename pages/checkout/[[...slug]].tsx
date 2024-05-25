@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
 import {TCartInited} from '../../redux/reducers/cart';
 import Loader from '../../components/Loader';
-import '/pizza/PizzaTankIncorperated/assets/logo.svg';
+import logo from '/pizza/PizzaTankIncorperated/assets/logo.svg';
 import Head from 'next/head';
 import {useCallback, useEffect, useRef} from 'react';
 import {createGetStr} from 'boundless-api-client/utils';
