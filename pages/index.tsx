@@ -7,10 +7,10 @@ import {makeAllMenus} from '../lib/menu';
 import VerticalMenu from '../components/VerticalMenu';
 import {IMenuItem} from '../@types/components';
 import SwiperSlider from '../components/SwiperSlider';
-import cliffImg from '../assets/cliff_1.jpg';
-import cliff2Img from '../assets/cliff_2.jpg';
+import cliffImg from '../assets/2flex2pizza.png';
+import cliff2Img from '../assets/cheesiestpizza.png';
 import CoverTextInCenter from '../components/CoverTextInCenter';
-import bgImg from '../assets/cover-bg.jpeg';
+import bgImg from '../assets/fallingpizza.png';
 import bgPortraitImg from '../assets/cover-bg-portrait.jpg';
 import ProductsSliderByQuery from '../components/ProductsSliderByQuery';
 import {IBasicSettings} from '../@types/settings';
@@ -25,12 +25,12 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 						{mainMenu && <VerticalMenu menuList={mainMenu} />}
 					</nav>
 					<div className='col-lg-9 col-md-12'>
-						<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Boundless store</h1>
+						<h1 className='page-heading page-heading_h1  page-heading_m-h1'>Raining Pepperoni</h1>
 						<ProductsList products={products} query={{}}/>
 					</div>
 				</div>
 				<div className='container'>
-					<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Cover example:</h2>
+					<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Pizza Tank now availible!</h2>
 				</div>
 			</div>
 			<CoverTextInCenter
@@ -38,9 +38,9 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 				img={bgImg.src}
 				imgPortrait={bgPortraitImg.src}
 				content={{
-					intro: 'Intro',
-					head: 'Main header',
-					subHead: 'subheader'
+					intro: 'Pizza Tank',
+					head: 'Here to forge ahead',
+					subHead: 'Pizza alone moves the wheels of history.'
 				}}
 				shadow={{
 					opacity: 0.5,
@@ -49,10 +49,10 @@ export default function IndexPage({products, mainMenu, footerMenu, basicSettings
 				link={'http://google.com'}
 			/>
 			<div className='container'>
-				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Products carousel:</h2>
+				<h2 className='page-heading page-heading_h1  page-heading_m-h1'>Dominate your hunger:</h2>
 				<ProductsSliderByQuery
 					query={{collection: ['main-page'], sort: 'in_collection'}}
-					title={'Collection title'}
+					title={''}
 					wrapperClassName='page-block'
 				/>
 			</div>
@@ -88,7 +88,7 @@ function MainPageSlider() {
 		{
 			'img': cliffImg.src,
 			'link': '',
-			'caption': 'Three things cannot be long hidden: The Sun, The Moon, and The Truth.',
+			'caption': 'We choose to make pizza tank not because it is easy but because it is hard.',
 			'captionPosition': 'center',
 			'useFilling': true,
 			'fillingColor': '#000000',
@@ -97,7 +97,7 @@ function MainPageSlider() {
 		{
 			'img': cliff2Img.src,
 			'link': '',
-			'caption': 'Pray not for easy lives, pray to be stronger men.',
+			'caption': 'Pray not for easy lives, pray to finish pizza tank.',
 			'captionPosition': null,
 			'useFilling': true,
 			'fillingColor': '#000000',

@@ -2,13 +2,14 @@ import Link from 'next/link';
 import logoImg from '../../assets/logo.svg';
 import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.jpg';
 import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.svg';
+import logoImg from '../../assets/logo.jpg';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
-	const title = companyTitle || 'Your Company LLC.';
+	const title = companyTitle || 'Pizza Tank inc.';
 	return <>
         <div className='page-footer__logo'>
 					<Link href='/'>
-						<img src={logoImg.src} width={logoImg.width} height={logoImg.height} alt={title} />
+						<img src={logoImg.src} width={'90px'} height={'100px'} alt={title} />
 					</Link>
         </div>
         <div className='page-footer__company-info'>
@@ -16,8 +17,7 @@ export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
         </div>
         <div className='page-footer__disclaimer'>
             <p className='text-muted small'>
-                This website and its contents are provided "as is" and "as available" without any warranty or representations of any kind, whether express or implied.
-                Price and availability information is subject to change without notice.
+                This website is for the worldwide distribution of pizza. We strive for excelence in a global pizza economy!
             </p>
         </div>
     </>;

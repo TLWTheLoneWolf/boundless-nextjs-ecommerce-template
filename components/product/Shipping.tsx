@@ -10,6 +10,9 @@ const shippingInfo = [
 	{id: 1, text: 'Overnight delivery.'},
 	{id: 2, text: 'Changed your mind? Problem!'},
 	{id: 3, text: 'Customers? I disagree'},
+	{id: 1, icon: faCalendarAlt, text: 'Overnight delivery.'},
+	{id: 2, icon: faUndo, text: 'Changed your mind? Problem!'},
+	{id: 3, icon: faPhoneVolume, text: 'Customers? I disagree'},
 ];
 
 export default function ProductShipping() {
