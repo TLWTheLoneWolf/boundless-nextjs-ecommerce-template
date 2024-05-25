@@ -10,9 +10,9 @@ export default function CoverPage() {
 				img={bgImg.src}
 				imgPortrait={bgPortraitImg.src}
 				content={{
-					intro: 'Intro',
-					head: 'Main header',
-					subHead: 'subheader'
+					intro: 'pizza tank',
+					head: 'revolution through pizza',
+					subHead: 'hunger dies beneath our treads'
 				}}
 				shadow={{
 					opacity: 0.5,
@@ -20,7 +20,7 @@ export default function CoverPage() {
 				}}
 				link={'http://google.com'}
 			/>
-			<div className='text-center' style={{minHeight: 200}}>Some other text here</div>
+			<div className='text-center' style={{minHeight: 200}}>pizza</div>
 		</>
 	);
 }
