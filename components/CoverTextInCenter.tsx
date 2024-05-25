@@ -1,5 +1,5 @@
-import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React from 'react';
@@ -48,7 +48,7 @@ export default function CoverTextInCenter({img, imgPortrait, shadow, content, li
 					className='cover-text-center__down'
 					onClick={scrollDown}
 				>
-					<FontAwesomeIcon icon={faChevronDown} />
+					{/* <FontAwesomeIcon icon={faChevronDown} /> */}
 				</a>}
 			</div>
 		</div>

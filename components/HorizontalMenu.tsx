@@ -2,8 +2,8 @@ import React from 'react';
 import clsx from 'clsx';
 import Link from 'next/link';
 import {CSSTransition} from 'react-transition-group';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCaretDown} from '@fortawesome/free-solid-svg-icons/faCaretDown';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faCaretDown} from '@fortawesome/free-solid-svg-icons/faCaretDown';
 import {IMenuItem} from '../@types/components';
 
 export default class HorizontalMenu extends React.Component<HorizontalMenuProps, HorizontalMenuState> {
@@ -116,7 +116,7 @@ function ListElement({item, position, hasChildren}: {item: IMenuItem, position?:
 	const titleWithIcon = hasChildren
 		? <>
 			{item.title}
-			{hasChildren && <FontAwesomeIcon className='ms-2' icon={faCaretDown} />}
+			
 		</>
 		: item.title;
 

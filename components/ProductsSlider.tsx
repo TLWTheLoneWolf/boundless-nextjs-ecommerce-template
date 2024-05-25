@@ -5,9 +5,9 @@ import SwiperCore, {Navigation, Scrollbar} from 'swiper';
 import SliderProductItem from './productsSlider/SliderProductItem';
 import ProductItemLoader from './productsSlider/ProductItemLoader';
 import clsx from 'clsx';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+// import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
 
 export default function ProductsSlider({products, loading, className, swiperProps}: ProductsSliderProps) {
 	const swiper = useRef<SwiperCore | null>(null);
@@ -59,8 +59,8 @@ export default function ProductsSlider({products, loading, className, swiperProp
 						</SwiperSlide>
 					)}
 			</Swiper>
-			<a href='#' className='products-slider__prev'><FontAwesomeIcon icon={faChevronLeft} size={'lg'}/></a>
-			<a href='#' className='products-slider__next'><FontAwesomeIcon icon={faChevronRight} size={'lg'}/></a>
+			<a href='#' className='products-slider__prev'></a>
+			<a href='#' className='products-slider__next'></a>
 		</div>
 	);
 }

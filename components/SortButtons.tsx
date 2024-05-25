@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import clsx from 'clsx';
 import {TQuery, TSortOrder} from '../@types/common';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSortAmountDown, faSortAmountDownAlt} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faSortAmountDown, faSortAmountDownAlt} from '@fortawesome/free-solid-svg-icons';
 
 const sortFields = [
 	{id: 1, title: 'Default', order: false, alias: 'default'},
@@ -59,11 +59,11 @@ export default function SortButtons({params, onSort, className}: {params: TQuery
 									onClick={(e) => onSortClick(e, field.id)}
 								>
 									{field.title}
-									{field.order && isActive &&
-										<FontAwesomeIcon
-											className='ms-1'
-											icon={order === TSortOrder.asc ? faSortAmountDownAlt : faSortAmountDown}
-										/>}
+									{/* {field.order && isActive &&
+										// <FontAwesomeIcon
+										// 	className='ms-1'
+										// 	icon={order === TSortOrder.asc ? faSortAmountDownAlt : faSortAmountDown}
+										/>} */}
 								</a>}
 						</li>
 					);
