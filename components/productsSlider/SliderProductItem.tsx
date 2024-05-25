@@ -5,8 +5,8 @@ import {addItem2Cart} from '../../redux/actions/cart';
 import {getProductUrl} from '../../lib/urls';
 import Link from 'next/link';
 import ProductLabels from '../product/Labels';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
 import NoImage from '../NoImage';
 import {productImgRatio} from '../../lib/imgs';
 import {TThumbRatio} from 'boundless-api-client';
@@ -54,7 +54,7 @@ function Product2Cart({product}: {product: IProduct}) {
 					className='btn btn-action'
 					onClick={onAddToCart}
 				>
-					<FontAwesomeIcon icon={faCartPlus} /> Add to cart
+					{/* <FontAwesomeIcon icon={faCartPlus} /> Add to cart */}
 				</button>
 				: <span className={'text-muted'}>Out of stock</span>
 			}

@@ -5,10 +5,10 @@ import {useAppDispatch} from '../../hooks/redux';
 import {addItem2Cart} from '../../redux/actions/cart';
 import {findSellingPrice, getPriceForTpl, IPriceForTpl} from '../../lib/product';
 import currency from 'currency.js';
-import {faPlus} from '@fortawesome/free-solid-svg-icons/faPlus';
-import {faMinus} from '@fortawesome/free-solid-svg-icons/faMinus';
-import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faPlus} from '@fortawesome/free-solid-svg-icons/faPlus';
+// import {faMinus} from '@fortawesome/free-solid-svg-icons/faMinus';
+// import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import useFormatCurrency from '../../hooks/useFormatCurrency';
 
 export default function ProductPriceAndBuy({product, selectedVariant, setError, onAddedToCart}: IPriceAndBuyProps) {
@@ -86,7 +86,7 @@ export default function ProductPriceAndBuy({product, selectedVariant, setError, 
 						className={'btn btn-action btn-anim btn-lg'}
 						onClick={onBuyBtnClicked}
 					>
-						<FontAwesomeIcon icon={faCartPlus} /> Buy
+						{/* <FontAwesomeIcon icon={faCartPlus} /> Buy */}
 					</button>
 				</div>
 			</div>}
@@ -120,7 +120,7 @@ const PriceAndBuyQty = ({qty, setQty}: {qty: number, setQty: (value: number) => 
 				className={'btn btn-outline-secondary text-center'}
 				onClick={onBtnClicked.bind(null, -1)}
 			>
-				<FontAwesomeIcon icon={faMinus} />
+				{/* <FontAwesomeIcon icon={faMinus} /> */}
 			</button>
 			<input type={'number'}
 				className={'form-control'}
@@ -132,7 +132,7 @@ const PriceAndBuyQty = ({qty, setQty}: {qty: number, setQty: (value: number) => 
 				className={'btn btn-outline-secondary text-center'}
 				onClick={onBtnClicked.bind(null, 1)}
 			>
-				<FontAwesomeIcon icon={faPlus} />
+				{/* <FontAwesomeIcon icon={faPlus} /> */}
 			</button>
 		</div>
 	);

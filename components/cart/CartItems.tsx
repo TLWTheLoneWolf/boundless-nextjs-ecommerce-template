@@ -6,8 +6,8 @@ import {addPromise} from '../../redux/reducers/xhr';
 import {RootState} from '../../redux/store';
 import debounce from 'lodash/debounce';
 import CartRow from './CartRow';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faShoppingCart} from '@fortawesome/free-solid-svg-icons/faShoppingCart';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faShoppingCart} from '@fortawesome/free-solid-svg-icons/faShoppingCart';
 import {useRouter} from 'next/router';
 
 export default function CartItems({items, setItems, total}: ICartItemsProps) {
@@ -117,7 +117,7 @@ export default function CartItems({items, setItems, total}: ICartItemsProps) {
 					disabled={submitting}
 					onClick={() => router.push('/checkout')}
 				>
-					Proceed to checkout <FontAwesomeIcon icon={faShoppingCart} />
+					Proceed to checkout 
 				</button>
 			</div>
 		</>

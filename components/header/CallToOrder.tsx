@@ -7,8 +7,8 @@ import {RootState} from '../../redux/store';
 import ProductImage from '../productsList/ProductImage';
 import NoImage from '../NoImage';
 import {TThumbRatio} from 'boundless-api-client';
-import {faCheck} from '@fortawesome/free-solid-svg-icons/faCheck';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faCheck} from '@fortawesome/free-solid-svg-icons/faCheck';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useEffect, useState} from 'react';
 import useFormatCurrency from '../../hooks/useFormatCurrency';
 
@@ -69,7 +69,7 @@ export default function CallToOrder() {
 					}
 					<div className='text-end'>
 						<Link href='/cart' className='btn btn-action btn-anim'>
-							<FontAwesomeIcon icon={faCheck} />Place an order
+							Place an order
 						</Link>
 					</div>
 				</div>

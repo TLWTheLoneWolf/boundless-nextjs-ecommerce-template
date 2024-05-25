@@ -2,8 +2,8 @@ import clsx from 'clsx';
 import Link from 'next/link';
 import {getCategoryImg} from '../../lib/imgs';
 import {getCategoryUrl} from '../../lib/urls';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
 import {ICategoryFlatItem, ICategoryItem} from 'boundless-api-client';
 import {useMemo} from 'react';
 
@@ -43,7 +43,7 @@ export default function CategorySidebar({category}: {category: ICategoryItem}) {
 						{item.category_id === category.category_id
 							? <strong>{item.title}</strong>
 							:	<Link href={getCategoryUrl(item)}>
-										<FontAwesomeIcon icon={faChevronLeft} size={'xs'} /> {item.title}
+										{/* <FontAwesomeIcon icon={faChevronLeft} size={'xs'} /> {item.title} */}
 								</Link>
 						}
 					</li>

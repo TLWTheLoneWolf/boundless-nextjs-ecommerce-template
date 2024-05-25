@@ -8,8 +8,8 @@ import ProductPrice from './ProductPrice';
 import {TQuery} from '../../@types/common';
 import Link from 'next/link';
 import ProductLabels from '../product/Labels';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faCartPlus} from '@fortawesome/free-solid-svg-icons/faCartPlus';
 import NoImage from '../NoImage';
 import {productImgRatio} from '../../lib/imgs';
 import {TThumbRatio} from 'boundless-api-client';
@@ -60,7 +60,7 @@ function Product2Cart({product}: {product: IProduct}) {
 					className='btn btn-action btn-resp-size'
 					onClick={onAddToCart}
 				>
-					<FontAwesomeIcon icon={faCartPlus} /> Add to cart
+					 Add to cart
 				</button>
 				: <span className={'text-muted'}>Out of stock</span>
 			}

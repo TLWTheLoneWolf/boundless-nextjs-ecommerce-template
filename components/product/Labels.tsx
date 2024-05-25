@@ -1,11 +1,11 @@
 import {ILabel, TLabelIcon} from 'boundless-api-client';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faStar} from '@fortawesome/free-solid-svg-icons/faStar';
-import {faFlag} from '@fortawesome/free-solid-svg-icons/faFlag';
-import {faFire} from '@fortawesome/free-solid-svg-icons/faFire';
-import {faCheck} from '@fortawesome/free-solid-svg-icons/faCheck';
-import {faTag} from '@fortawesome/free-solid-svg-icons/faTag';
-import {faHeart} from '@fortawesome/free-solid-svg-icons/faHeart';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faStar} from '@fortawesome/free-solid-svg-icons/faStar';
+// import {faFlag} from '@fortawesome/free-solid-svg-icons/faFlag';
+// import {faFire} from '@fortawesome/free-solid-svg-icons/faFire';
+// import {faCheck} from '@fortawesome/free-solid-svg-icons/faCheck';
+// import {faTag} from '@fortawesome/free-solid-svg-icons/faTag';
+// import {faHeart} from '@fortawesome/free-solid-svg-icons/faHeart';
 import clsx from 'clsx';
 
 export default function ProductLabels({labels, className}: {labels: ILabel[], className?: string}) {
@@ -30,32 +30,32 @@ const LabelIcon = ({icon}: {icon: string|null}) => {
 	let faIcon;
 	switch (icon) {
 		case TLabelIcon.star:
-			faIcon = faStar;
+			faIcon = '';
 			break;
 
 		case TLabelIcon.flag:
-			faIcon = faFlag;
+			faIcon = '';
 			break;
 
 		case TLabelIcon.fire:
-			faIcon = faFire;
+			faIcon = '';
 			break;
 
 		case TLabelIcon.ok:
-			faIcon = faCheck;
+			faIcon = '';
 			break;
 
 		case TLabelIcon.tag:
-			faIcon = faTag;
+			faIcon = '';
 			break;
 
 		case TLabelIcon.heart:
-			faIcon = faHeart;
+			faIcon = '';
 			break;
 	}
 
 	if (!faIcon)
 		return null;
 
-	return <FontAwesomeIcon icon={faIcon} />;
+	return null;
 };

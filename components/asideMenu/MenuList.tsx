@@ -1,5 +1,5 @@
-import {faCaretDown, faCaretRight} from '@fortawesome/free-solid-svg-icons';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faCaretDown, faCaretRight} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import clsx from 'clsx';
 import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
@@ -95,7 +95,7 @@ function ListElement({item, position, open}: {item: IMenuItem, position?: number
 									{item.title}
 							</span>
 					</span>
-					{isRootElem && hasChildren && <FontAwesomeIcon className='ms-2' icon={open ? faCaretDown : faCaretRight} />}
+					{isRootElem && hasChildren}
 			</Link>
 			{isRootElem && <meta itemProp='position' content={String(position + 1)} />}
 			{!isRootElem && hasChildren && <ChildList children={item.children!} />}
@@ -112,7 +112,7 @@ function ListElement({item, position, open}: {item: IMenuItem, position?: number
 					{image && imageElem}
 					{item.title}
 				</span>
-				{isRootElem && hasChildren && <FontAwesomeIcon className='ms-2' icon={open ? faCaretDown : faCaretRight} />}
+				{isRootElem && hasChildren}
 			</div>
 			{!isRootElem && hasChildren && <ChildList children={item.children!} />}
 		</>
