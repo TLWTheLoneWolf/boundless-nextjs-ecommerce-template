@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 import {apiClient} from '../../lib/api';
 import {TCartInited} from '../../redux/reducers/cart';
 import Loader from '../../components/Loader';
-import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.jpg';
+import '/pizza/PizzaTankIncorperated/assets/logo.svg';
 import Head from 'next/head';
 import {useCallback, useEffect, useRef} from 'react';
 import {createGetStr} from 'boundless-api-client/utils';
@@ -39,7 +39,7 @@ export default function CheckoutPage() {
 					window.location.assign(`/thank-you/${data.orderId}`);
 				},
 				basename: '/checkout',
-				logoSrc: logoImg.src,
+				logoSrc: logo,
 			});
 		}
 	}, [cartInited, cartId]);//eslint-disable-line
