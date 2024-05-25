@@ -6,6 +6,7 @@ import logoImg from '../assets/logo.svg';
 import {faBars} from '@fortawesome/free-solid-svg-icons/faBars';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import logoImg from '../assets/logo.jpg';
+import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.jpg';
 // import {faBars} from '@fortawesome/free-solid-svg-icons/faBars';
 // import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {useAppDispatch} from '../hooks/redux';
