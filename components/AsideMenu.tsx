@@ -5,8 +5,8 @@ import {disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks} from 'body
 import {useEffect, useRef} from 'react';
 import {setIsOpened} from '../redux/reducers/asideMenu';
 import HeaderCart from './cart/HeaderCart';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faTimes} from '@fortawesome/free-solid-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faTimes} from '@fortawesome/free-solid-svg-icons';
 import AsideMenuList from './asideMenu/MenuList';
 import {DragGesture} from '@use-gesture/vanilla';
 import {IMenuItem} from '../@types/components';
@@ -96,7 +96,7 @@ export default function AsideMenu({menuList}: {menuList?: IMenuItem[]}) {
 			<div className='aside-menu__header'>
 				<HeaderCart className={'cart-header cart-header_horizontal'} />
 				<button className='btn' onClick={closeIfOpened} >
-					<FontAwesomeIcon icon={faTimes} />
+					{/* <FontAwesomeIcon icon={faTimes} /> */}
 				</button>
 			</div>
 			{menuList && <AsideMenuList menuList={menuList} />}
