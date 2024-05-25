@@ -1,9 +1,9 @@
 import {Swiper, SwiperProps, SwiperSlide} from 'swiper/react';
 import {Navigation, Scrollbar, Pagination} from 'swiper';
 import clsx from 'clsx';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
-import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faChevronLeft} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+// import {faChevronRight} from '@fortawesome/free-solid-svg-icons/faChevronRight';
 import SwiperSliderSlide, {ISwiperSliderSlide} from './swiperSlider/SwiperSliderSlide';
 import {PaginationOptions} from 'swiper/types';
 
@@ -39,8 +39,8 @@ export default function SwiperSlider({className, slideClassName, showPrevNext, s
 					</SwiperSlide>)}
 			</Swiper>
 			{showPrevNext && <>
-				<a href='#' className='swiper-slider__prev'><FontAwesomeIcon icon={faChevronLeft} /></a>
-				<a href='#' className='swiper-slider__next'><FontAwesomeIcon icon={faChevronRight} /></a>
+				<a href='#' className='swiper-slider__prev'></a>
+				<a href='#' className='swiper-slider__next'></a>
 			</>}
 		</div >
 	);
