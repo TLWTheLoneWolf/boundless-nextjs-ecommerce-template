@@ -1,7 +1,4 @@
 import Link from 'next/link';
-import logoImg from '../../assets/logo.svg';
-import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.jpg';
-import logoImg from '/pizza/PizzaTankIncorperated/assets/logo.svg';
 import logoImg from '../../assets/logo.jpg';
 
 export default function FooterAbout({companyTitle}: {companyTitle?: string}) {
