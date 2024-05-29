@@ -1,18 +1,12 @@
-// import {faUndo} from '@fortawesome/free-solid-svg-icons/faUndo';
-// import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons/faCalendarAlt';
-// import {faPhoneVolume} from '@fortawesome/free-solid-svg-icons/faPhoneVolume';
-// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faUndo} from '@fortawesome/free-solid-svg-icons/faUndo';
+import {faCalendarAlt} from '@fortawesome/free-solid-svg-icons/faCalendarAlt';
+import {faPhoneVolume} from '@fortawesome/free-solid-svg-icons/faPhoneVolume';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 const shippingInfo = [
-	{id: 1, icon: faCalendarAlt, text: 'Extended warranty for 30 days.'},
-	{id: 2, icon: faUndo, text: 'Changed your mind? No problem!'},
-	{id: 3, icon: faPhoneVolume, text: 'Customer support line'},
 	{id: 1, text: 'Overnight delivery.'},
 	{id: 2, text: 'Changed your mind? Problem!'},
 	{id: 3, text: 'Customers? I disagree'},
-	{id: 1, icon: faCalendarAlt, text: 'Overnight delivery.'},
-	{id: 2, icon: faUndo, text: 'Changed your mind? Problem!'},
-	{id: 3, icon: faPhoneVolume, text: 'Customers? I disagree'},
 ];
 
 export default function ProductShipping() {
